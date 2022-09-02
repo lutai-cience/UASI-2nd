@@ -1,5 +1,5 @@
 /* Slick slider: */
-$enable-slick-slider: true;
+$enable-slick-slider: false;
 
 $slick-dots-color: blue;
 $slick-dots-margin-bottom: 50px;
@@ -9,8 +9,8 @@ $slick-dots-color-inverse: false;
 
 /* Fonts: */
 
-$font-family: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap';
-$font-main: 'Open Sans', sans-serif;
+$font-family: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
+$font-main: 'Inter', sans-serif;
 
 //$font-family-2: 'https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap';
 //$font-secondary: 'Calligraffitti', cursive;
@@ -23,7 +23,7 @@ $font-main: 'Open Sans', sans-serif;
 $calendly-enabled: true;
 
 /* Video modal */
-$video-modal-enabled: true;
+$video-modal-enabled: false;
 
 /* Button Up */
 $buttonUp: true;
