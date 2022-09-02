@@ -1,0 +1,36 @@
+@import "settings";
+@import "inc/default";
+
+/* Start your scss code below: */
+
+$button-bg: #1B89CA;
+$button-color: #fff;
+
+.cta {
+  display: inline-flex;
+  min-width: 200px;
+  min-height: 50px;
+  justify-content:center;
+  align-items: center;
+  line-height: 1;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  background: $button-bg;
+  color: $button-color !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  border-radius: 5px;
+  &:hover{
+    background: darken($button-bg, 7);
+  }
+}
+
+@media (min-width: 1200px){
+  .cta {
+    min-width: 230px;
+    min-height: 55px;
+    font-size: 16px;
+  }
+}

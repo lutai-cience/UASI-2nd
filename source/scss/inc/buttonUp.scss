@@ -1,0 +1,39 @@
+$buttonUp: false !default;
+@if $buttonUp == true {
+.scrollBtnToTop {
+  background-color: darken(#CC0000, $amount: 6);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("https://app.unbouncepreview.com/publish/assets/79139c0b-ae4a-4fff-9969-2f2941f1003f/45120997-icon-.svg") no-repeat;
+    width: 32px;
+    height: 52px;
+    background-size: contain;
+    transform: rotate(270deg);
+    top: -3px;
+    right: 12px;
+  }
+  position: fixed;
+  bottom: 50%;
+  right: 20px;  
+  z-index: 100; 
+  opacity: 0; 
+  transform: translateX(100px);
+  transition: all 0.5s ease;
+}
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width: 1200px){
+    .scrollBtnToTop {
+      right: 50px;
+    }
+}
+}

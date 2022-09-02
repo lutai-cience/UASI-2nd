@@ -1,0 +1,74 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+$enable-slick-slider: false !default;
+@if($enable-slick-slider == true){
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css");
+}
+@import "inc/slick-dots";
+
+@import "inc/unbounce-defaults";
+@import "inc/unbounce-fixes";
+@import "inc/mover";
+@import "inc/animate";
+@import "inc/calendly";
+@import "inc/video-modal";
+@import "inc/buttonUp";
+
+
+*, *:before, *:after {
+  outline: none !important;
+  &:active, &:hover, &:focus {
+    outline: none !important;
+  }
+}
+
+$font-family: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap' !default;
+$font-family-2: '' !default;
+$font-family-3: '' !default;
+
+@import url(#{$font-family});
+@if $font-family-2 != '' {
+  @import url(#{$font-family-2});
+}
+@if $font-family-3 != '' {
+  @import url(#{$font-family-3});
+}
+
+$font-main: 'Open Sans', sans-serif !default;
+$font-secondary: 'Arial', 'Tahoma', sans-serif !default;
+$font-third: '' !default;
+
+body, body.lp-pom-body {
+  font-family: $font-main;
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 0 !important;
+}
+
+@media (min-width: 1200px){
+  body, body.lp-pom-body {
+    max-width: 100%;
+  }
+}
+
+#page-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section, footer {
+  background: white;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+}

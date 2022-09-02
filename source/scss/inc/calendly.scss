@@ -1,0 +1,29 @@
+$calendly-enabled: true !default;
+
+@if $calendly-enabled==true {
+  .calendar-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .calendly-inline-widget {
+    height: 860px !important;
+  }
+
+  @media (min-width: 768px) {
+    .calendar-wrap {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .calendly-inline-widget {
+      height: 935px !important;
+    }
+  }
+
+  @media (min-widtH: 1200px) {
+    .calendly-inline-widget {
+      height: 670px !important;
+    }
+  }
+}

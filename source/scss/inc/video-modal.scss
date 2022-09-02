@@ -1,0 +1,44 @@
+$video-modal-enabled: false !default;
+@if $video-modal-enabled == true {
+#video-modal {
+  .modal-video-wrap {
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+  .close {
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 15px);
+    text-shadow: none;
+    opacity: 1;
+    font-size: 40px;
+  }
+  
+}
+
+@media (min-width: 768px){
+  #video-modal {
+    .modal-dialog {
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}
+}

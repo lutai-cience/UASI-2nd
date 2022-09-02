@@ -1,0 +1,26 @@
+#lp-pom-root {
+    width: 100% !important;
+    min-width: 0 !important;
+    background: white !important;
+    .lp-positioned-content {
+      position: static !important;
+      width: 100%;
+      margin: 0 !important;
+      height: auto !important;
+    }
+  }
+  
+  #lp-pom-root-color-overlay {
+    display: none !important;
+  }
+  
+  div.lp-pom-root .lp-element.lp-code {
+    overflow: visible !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .lp-pom-block {
+    display: none !important;
+  }

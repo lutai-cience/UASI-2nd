@@ -1,0 +1,1 @@
+Place your unoptimized images into this folder.
